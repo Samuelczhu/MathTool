@@ -32,7 +32,7 @@ main h1:first-child {
 }
 
 #input_div input {
-    max-width: 100px;
+    max-width: 150px;
     outline: none;
     padding: 3px;
     margin-right: 2px;
