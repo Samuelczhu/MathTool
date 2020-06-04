@@ -9,5 +9,5 @@ Hope it will be useful to you:) Please visit the following website:
 https://samuelczhu.github.io/MathTool/
 
 # Images
-<img src="demo/1.jpg" width="400"> <img src="demo/2.jpg" width="400">
-<img src="demo/3.jpg" width="400"> <img src="demo/4.jpg" width="400">
+<img src="demo/a.jpg" width="400"> <img src="demo/b.jpg" width="400">
+<img src="demo/c.jpg" width="400"> <img src="demo/d.jpg" width="400">
