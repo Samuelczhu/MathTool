@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/tempCONV.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="numCONV.html">Num. CONV</a></li>
+                <li><a href="tempCONV.html">Temp. CONV</a></li>
+                <li><a href="timeCALC.html">Time CALC</a></li>
+                <li><a href="about.html">About</a></li>
+                <li id="dropdown">&#9776;</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Temperature Converter</h1>
+        <div id="input_div">
+            <form>
+                <label for="input_temp">Please enter a temperature:</label>
+                <input type="text" id="input_temp">
+                <select id="select_temp">
+                    <option value="0">&deg;C</option>
+                    <option value="1">&deg;F</option>
+                    <option value="2">K</option>
+                </select>
+            </form>
+            <br>
+            <button id="button_convert">Convert</button>
+        </div>
+        <div id="display_div">
+            <table>
+                <tr>
+                    <th>Celsius:</th>
+                    <td id="celsius_display"></td>
+                    <td>&deg;C</td>
+                </tr>
+                <tr>
+                    <th>Fahrenheit:</th>
+                    <td id="fahrenheit_display"></td>
+                    <td>&deg;F</td>
+                </tr>
+                <tr>
+                    <th>Kelvin:</th>
+                    <td id="kelvin_display"></td>
+                    <td>K</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <footer>Temperature Converter</footer>
+
+    <script src="scripts/header.js"></script>
+    <script src="scripts/tempCONV.js"></script>
+</body>
+
+</html>

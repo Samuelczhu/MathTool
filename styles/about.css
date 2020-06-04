@@ -1,0 +1,31 @@
+main {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, rgb(142, 21, 146), rgb(16, 152, 170));
+    color: wheat;
+    padding-bottom: 60px;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px navy;
+    padding: 60px 0px 40px 0px;
+}
+
+main p {
+    padding: 5px 10px 20px 10px;
+}
+
+main h2 a {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px black;
+}
+
+main h2 a:active {
+    text-decoration: underline;
+}

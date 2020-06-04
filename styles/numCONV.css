@@ -1,0 +1,100 @@
+main {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, rgb(27, 98, 110), rgb(11, 163, 32));
+}
+
+main h1 {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 2px #0004ff;
+}
+
+main h1:first-child {
+    padding-top: 60px;
+}
+
+#input_div {
+    padding-top: 40px;
+    color: white;
+    text-align: center;
+}
+
+#input_div form {
+    display: inline-block;
+}
+
+#input_div label {
+    display: block;
+    font-size: 1.1em;
+    text-align: left;
+}
+
+#input_div input {
+    outline: none;
+    padding: 3px;
+    margin-right: 2px;
+    border: 1px solid #DDDDDD;
+    background: none;
+    color: white;
+    font-size: 1em;
+}
+
+#input_div input:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+
+#input_div select {
+    background: rgb(16, 63, 151);
+    color: white;
+    padding: 5px;
+    border: 1px solid rgb(16, 63, 151);
+    border-radius: 5px;
+}
+
+#button_convert {
+    background: rgb(16, 63, 151);
+    color: white;
+    border: 1px solid rgb(16, 63, 151);
+    border-radius: 25px;
+    padding: 5px 10px;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#button_convert:active {
+    background: rgb(32, 87, 189);
+}
+
+#display_div {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.2em;
+    color: white;
+    overflow-x: auto;
+}
+
+#display_div table {
+    display: inline-block;
+}
+
+#display_div table tr td {
+    padding: 5px 10px;
+    min-width: 100px;
+}
+
+#display_div table tr td:first-child {
+    text-align: right;
+}
+
+#display_div table tr td:last-child {
+    text-align: left;
+}
+
+@media screen and (max-height: 500px) {
+    main {
+        padding-bottom: 60px;
+    }
+}

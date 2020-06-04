@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Converter</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/numCONV.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="numCONV.html">Num. CONV</a></li>
+                <li><a href="tempCONV.html">Temp. CONV</a></li>
+                <li><a href="timeCALC.html">Time CALC</a></li>
+                <li><a href="about.html">About</a></li>
+                <li id="dropdown">&#9776;</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Number System</h1>
+        <h1>Converter</h1>
+        <div id="input_div">
+            <form>
+                <label for="input_number">Please enter a number:</label><br>
+                <input type="text" id="input_number">
+                <select id="select_type">
+                        <option value="0">Decimal</option>
+                        <option value="1">Binary</option>
+                        <option value="2">2's Complement</option>
+                        <option value="3">Octal</option>
+                        <option value="4">Hexadecimal</option>
+                </select>
+            </form>
+            <br>
+            <button id="button_convert">Convert</button>
+        </div>
+        <div id="display_div">
+            <table>
+                <tr>
+                    <td>Decimal:</td>
+                    <td id="decimal_display"></td>
+                </tr>
+                <tr>
+                    <td>Binary:</td>
+                    <td id="binary_display"></td>
+                </tr>
+                <tr>
+                    <td>2's Complement:</td>
+                    <td id="complement_display"></td>
+                </tr>
+                <tr>
+                    <td>Octal:</td>
+                    <td id="octal_display"></td>
+                </tr>
+                <tr>
+                    <td>Hexadecimal:</td>
+                    <td id="hex_display"></td>
+                </tr>
+            </table>
+        </div>
+
+    </main>
+
+    <footer>Number Converter</footer>
+
+    <script src="scripts/header.js"></script>
+    <script src="scripts/numCONV.js"></script>
+</body>
+
+</html>

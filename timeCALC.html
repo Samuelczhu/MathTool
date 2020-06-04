@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Calculator</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/timeCALC.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="numCONV.html">Num. CONV</a></li>
+                <li><a href="tempCONV.html">Temp. CONV</a></li>
+                <li><a href="timeCALC.html">Time CALC</a></li>
+                <li><a href="about.html">About</a></li>
+                <li id="dropdown">&#9776;</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Time Calculator</h1>
+        <div id="input_div">
+            <form>
+                <label for="start_hour">Start Time:</label>
+                <input id="start_hour" type="number" min="0" step="1" style="text-align: right;">
+                <span>:</span>
+                <input id="start_min" type="number" min="0" step="1">
+            </form>
+            <br>
+            <form>
+                <label for="end_hour">End Time:</label>
+                <input id="end_hour" type="number" min="0" step="1" style="text-align: right;">
+                <span>:</span>
+                <input id="end_min" type="number" min="0" step="1">
+            </form>
+            <br>
+            <form>
+                <label for="deducted_hour">Deducted Hour:</label>
+                <input id="deducted_hour" type="number" min="0" value="0">
+            </form>
+            <br>
+            <button id="button_calculate">Calculate</button>
+        </div>
+        <div id="display_div">
+            <h2>Calculated Hour:</h2>
+            <div id="answer_display"></div>
+        </div>
+
+    </main>
+
+    <footer>Time Calculator</footer>
+
+    <script src="scripts/header.js"></script>
+    <script src="scripts/timeCALC.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/calculator.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="numCONV.html">Num. CONV</a></li>
+                <li><a href="tempCONV.html">Temp. CONV</a></li>
+                <li><a href="timeCALC.html">Time CALC</a></li>
+                <li><a href="about.html">About</a></li>
+                <li id="dropdown">&#9776;</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Calculator</h1>
+        <div id="calculator">
+            <form>
+                <div>
+                    <label>Mode:</label>
+                    <span id="mode_display">Radian</span>
+                </div>
+                <input id="input_display">
+                <div id="answer_display"></div>
+            </form>
+            <table id="function_table">
+                <tr>
+                    <td onclick="cursorLeftRight(-1)">&#8592;</td>
+                    <td onclick="cursorLeftRight(1)">&#8594;</td>
+                    <td onclick="addText('(')">(</td>
+                    <td onclick="addText(')')">)</td>
+                    <td onclick="degreeMode()">deg</td>
+                    <td onclick="radianMode()">rad</td>
+                </tr>
+                <tr>
+                    <td onclick="addText('abs(')">Abs</td>
+                    <td onclick="addText('^')">^</td>
+                    <td onclick="addText('logn(,)')">log<sub>n</sub></td>
+                    <td onclick="addText('log(')">log</td>
+                    <td onclick="addText('ln(')">ln</td>
+                    <td onclick="addText('e')">e</td>
+                </tr>
+                <tr>
+                    <td onclick="addText('√(')">√</td>
+                    <td onclick="addText('sqrtn(,)')"><sup>n</sup>√</td>
+                    <td onclick="addText('fact(')">x!</td>
+                    <td onclick="addText('P(,)')">nPr</td>
+                    <td onclick="addText('C(,)')">nCr</td>
+                    <td onclick="addText('&#960;')">&#960;</td>
+                </tr>
+                <tr>
+                    <td onclick="addText('sin(')">sin</td>
+                    <td onclick="addText('cos(')">cos</td>
+                    <td onclick="addText('tan(')">tan</td>
+                    <td onclick="addText('asin(')">sin<sup>-1</sup></td>
+                    <td onclick="addText('acos(')">cos<sup>-1</sup></td>
+                    <td onclick="addText('atan(')">tan<sup>-1</sup></td>
+                </tr>
+                <tr>
+                    <td onclick="addText('sinh(')">sinh</td>
+                    <td onclick="addText('cosh(')">cosh</td>
+                    <td onclick="addText('tanh(')">tanh</td>
+                    <td onclick="addText('asinh(')">sinh<sup>-1</sup></td>
+                    <td onclick="addText('acosh(')">cosh<sup>-1</sup></td>
+                    <td onclick="addText('atanh(')">tanh<sup>-1</sup></td>
+                </tr>
+                <table id="number_table">
+                    <tr>
+                        <td onclick="addText('7')">7</td>
+                        <td onclick="addText('8')">8</td>
+                        <td onclick="addText('9')">9</td>
+                        <td id="DEL_button" onclick="deleteDisplay()">DEL</td>
+                        <td id="AC_button" onclick="clearDisplay()">AC</td>
+                    </tr>
+                    <tr>
+                        <td onclick="addText('4')">4</td>
+                        <td onclick="addText('5')">5</td>
+                        <td onclick="addText('6')">6</td>
+                        <td onclick="addText('×')">×</td>
+                        <td onclick="addText('÷')">÷</td>
+                    </tr>
+                    <tr>
+                        <td onclick="addText('1')">1</td>
+                        <td onclick="addText('2')">2</td>
+                        <td onclick="addText('3')">3</td>
+                        <td onclick="addText('+')">+</td>
+                        <td onclick="addText('-')">-</td>
+                    </tr>
+                    <tr>
+                        <td onclick="addText('0')">0</td>
+                        <td onclick="addText('.')">.</td>
+                        <td onclick="addText('×10^')">&#215;10<sup>x</sup></td>
+                        <td onclick="addText('Ans')">Ans</td>
+                        <td onclick="equal()">=</td>
+                    </tr>
+
+                </table>
+            </table>
+        </div>
+    </main>
+
+    <footer>Calculator</footer>
+
+    <script src="scripts/header.js"></script>
+    <script src="scripts/calculator.js"></script>
+</body>
+
+</html>
